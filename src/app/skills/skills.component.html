@@ -1,3 +1,20 @@
-<p>
-  skills works!
-</p>
+<div class="fh-c">
+  <div class="prog">
+    <h2>Programming languages</h2>
+    <div class="subSkills" *ngFor="let subProgSkills of progSkills">
+      <div class="comp" *ngFor="let sublist of subProgSkills | keyvalue">
+        <div *ngFor="let ico of sublist.value | keyvalue">
+          <i [ngClass]="'devicon-' + ico.value + '-plain'" (mouseover)="addClass($event)" (mouseleave)="removeClass($event)"></i>
+          <span>{{ ico.key }}</span>
+        </div>
+      </div>
+    </div>
+    <div *ngFor="let subs of skills.sk | keyvalue">
+      <h2>{{ subs.key }}</h2>
+      <div class="font-skills" *ngFor="let s of subs.value">
+        <p>{{ s }}</p>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,3 +1,5 @@
+@import "../app.component.scss";
+
 .fh-c {
     height: 100vh;
     display: flex;
@@ -9,17 +11,24 @@
     height: 100%;
     background-color: #333;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     box-shadow: 10px 0 30px #ddd;
 }
 
 #author {
+    transform: rotateZ(-90deg);
+    transform-origin: 0 100%;
+    position: absolute;
     font-size: 1vw;
-    display: block;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
+    display: inline-block;
     color: #eee;
+    height: 1vw;
+    width: 100vh;
+    left: 2.5vw;
+    bottom: 0%;
+    text-align: center;
+    letter-spacing: 1em;
 }
 
 .title-c {
@@ -33,34 +42,38 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  .fh-c {
-      flex-direction: column;
-  }
-  .name-c {
-      width: 100%;
-      height: 5vh;
-  }
-  #author {
-    text-orientation: inherit;
-    writing-mode: horizontal-tb;
-    font-size: 2vh;
-    letter-spacing: 0.4em;
-    font-weight: 300;
-  }
-  .title-c {
-    width: 90vw;
-  }
+    .fh-c {
+        flex-direction: column;
+    }
+    .name-c {
+        width: 100%;
+        height: 5vh;
+    }
+    #author {
+        font-size: 2vh;
+        letter-spacing: 0.4em;
+        font-weight: 300;
+        transform: none;
+        transform-origin: initial;
+        left: initial;
+        bottom: initial;
+        margin: 0;
+        height: initial;
+        width: initial;
+    }
+    .title-c {
+        width: 90vw;
+    }
 }
 
 .approot-title {
     cursor: pointer;
-    font-size: 8vw;
+    font-size: 6vw;
     text-decoration: none;
     color: #333;
     letter-spacing: 0.2em;
     font-weight: 300;
     position: relative;
-    &:before,
     &:after {
         content: "";
         position: absolute;
@@ -71,10 +84,8 @@
         transition: all 0.1s ease-in-out;
         transition-duration: 0.3s;
         opacity: 0;
-    }
-    &:after {
         left: 0;
-        background-color: #810000;
+        background-color: $green;
     }
 }
 
