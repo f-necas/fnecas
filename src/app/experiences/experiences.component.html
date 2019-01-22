@@ -1,0 +1,24 @@
+<div class="fh-c">
+  <div class="allexp">
+    <div *ngFor="let i of experiences">
+      <h2 [ngClass]="{'school': i.eSchool}">
+        {{ i.eTitle }}
+      </h2>
+      <div class="exp">
+        <div class="firmAndDate">
+          <p class="firm">
+            {{ i.eFirm }}
+          </p>
+          <p>{{ i.eEnd | date:'MMMM yyyy'}} </p>
+          <p *ngIf="!i.eSchool" class="datePipe">|</p>
+          <p *ngIf="!i.eSchool">{{ i.eStart | date:'MMMM yyyy'}}</p>
+        </div>
+        <div>
+          <ul>
+            <li *ngFor="let task of i.eDesc">{{ task }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -18,7 +18,7 @@ export class SkillsComponent implements OnInit {
 
     this.skills = {'sk': {
       'Management': [
-        'Founder of Phi Photographie Association',
+        'Founder of not-for-profit Phi Photographie association',
         'Team manager of Quality Service of LundiMatin',
         'Freelancer in web development'
       ],

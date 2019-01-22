@@ -26,46 +26,52 @@ h2 {
         margin: 30px 0;
         text-align: center;
     }
+    &.school::after{
+        background-color: $second;
+    }
 }
 
-.subSkills {
-    margin-bottom: 20px;
+.exp {
+    display: flex;
+}
+
+.firmAndDate {
+    width: 15%;
+    padding: 0 20px;
+    border-right: 1px solid #eee;
+}
+
+.datePipe {
+    color: #eee;
+}
+
+p {
     text-align: center;
-    display: flex;
-    justify-content: center;
-    &>div>div>span {
-        font-size: 0.8rem;
-        letter-spacing: 0.2em;
-        visibility: hidden;
-    }
-    &>div:hover>div>span {
-        visibility: visible;
-    }
+    letter-spacing: 0.2em;
 }
 
-.font-skills {
-    display: flex;
-    justify-content: center;
-    &>p {
+.firm {
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+    &>li {
+        padding-bottom: 5px;
         font-size: 1.2rem;
-        text-align: center;
-    }
-}
-
-i {
-    display: block;
-    font-size: 5rem;
-    margin: 20px 20px 2px 20px;
-}
-
-@media only screen and (max-width: 1200px) {
-    i {
-        font-size: 3rem;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    i {
-        font-size: 1rem;
+    .exp {
+        flex-direction: column;
+    }
+    .firmAndDate {
+        width: 100%;
+        padding: 0;
+        border-bottom: 1px solid #eee;
+        border-right: none;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
 }
