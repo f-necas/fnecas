@@ -8,6 +8,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
+import { HobbiesComponent } from './hobbies/hobbies.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ExperiencesComponent } from './experiences/experiences.component';
     SkillsComponent,
     PageNotFoundComponent,
     MainPageComponent,
-    ExperiencesComponent
+    ExperiencesComponent,
+    HobbiesComponent
   ],
   imports: [
     BrowserModule,

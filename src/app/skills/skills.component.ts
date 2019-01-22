@@ -13,7 +13,8 @@ export class SkillsComponent implements OnInit {
     this.progSkills = [
       [{'c++': 'cplusplus'}, {'java': 'java'}, {'python': 'python'}],
       [{'node.js': 'nodejs'}, {'angular': 'angularjs'}, {'wordpress': 'wordpress'}],
-      [{'html5': 'html5'}, {'css3': 'css3'}, {'scss': 'sass'} , {'javascript': 'javascript'}, {'typescript': 'typescript'}]
+      [{'html5': 'html5'}, {'css3': 'css3'}, {'scss': 'sass'} , {'javascript': 'javascript'}, {'typescript': 'typescript'}],
+      [{'mysql': 'mysql'}, {'mongodb': 'mongodb'}, {'git': 'git'}]
     ];
 
     this.skills = {'sk': {
