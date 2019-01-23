@@ -9,7 +9,7 @@
 .name-c {
     width: 5vw;
     height: 100%;
-    background-color: #333;
+    background: linear-gradient($primary, darken($second, 10%));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,11 +33,10 @@
 
 .title-c {
     width: 75vw;
-    height: 80vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 10vh 0;
     padding: 0 5vw;
 }
 
@@ -47,7 +46,8 @@
     }
     .name-c {
         width: 100%;
-        height: 5vh;
+        height: 7vh;
+        background: linear-gradient(to right, $primary, darken($second, 10%));
     }
     #author {
         font-size: 2vh;
@@ -85,7 +85,7 @@
         transition-duration: 0.3s;
         opacity: 0;
         left: 0;
-        background-color: $primary;
+        background: linear-gradient(to right, $primary, darken($second, 10%));
     }
 }
 

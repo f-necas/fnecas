@@ -1,3 +1,5 @@
+@import "../app.component.scss";
+
 .fh-c {
     height: 100vh;
     display: flex;
@@ -21,5 +23,5 @@ h1 {
 h3 > a {
     text-decoration: none;
     font-weight: 500;
-    color: #007f3f;
+    color: $primary;
 }

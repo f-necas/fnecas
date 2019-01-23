@@ -1,2 +1,62 @@
-$primary:#007f3f;
-$second:#c27400;
+$primary:#13547a;
+$second:#80d0c7;
+
+h2.sp-title {
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 5vh;
+    &::after {
+        content: "";
+        display: block;
+        height: 2px;
+        background: linear-gradient(to right, $primary, $second);
+        width: 100%;
+        margin: 30px 0;
+        text-align: center;
+    }
+    &.school::after{
+        background: linear-gradient(to right, #bd8100, lighten(#bd8100, 20%));
+    }
+}
+
+.backHome{
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    & svg {
+        height: 10vh;
+        width: 10vh;
+        padding-left: 20px;
+    }
+    & .backIcon {
+        padding-left: 20px;
+        stroke: $primary;
+    }
+    & .backHomeText {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .backHome {
+        position: initial;
+        height: 7vh;
+        border-bottom: 1px solid #eee;
+        & svg {
+            height: 3vh;
+            width: 3vh;
+            padding: 0 auto;
+        }
+        & .backHomeText {
+            display: none;
+            text-decoration: none;
+            font-size: 1%;
+        }
+    }
+    h2.sp-title {
+        margin-top: 2vh;
+    }
+}
