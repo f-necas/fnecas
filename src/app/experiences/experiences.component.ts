@@ -16,12 +16,12 @@ export class ExperiencesComponent implements OnInit {
          eDesc: ['Elaboration of specifications.',
           'Customer project tracking from demand to development.',
           'Team management.',
-          'Technological watch.',
+          'Technology intelligence.',
           'Creation of the Quality service.',
           'Developement of functionnal tests for mobile apps and web apps.'],
          eFirm: 'LundiMatin', eTypeContract: 'Apprenticeship'},
         {eEnd: new Date(2018, 9), eTitle: 'Master degree in computer science',
-        eDesc: ['Manager in computer science and robotics.',
+        eDesc: ['Engineer in computer science and robotics.',
         'Specialization : Smart objects and cloud.'],
         eFirm: 'IMERIR', eSchool: true},
         {eStart: new Date(2016, 2), eEnd: new Date(2016, 4), eTitle: 'Wordpress website developper / Project manager',
@@ -42,7 +42,7 @@ export class ExperiencesComponent implements OnInit {
         {eStart: new Date(2014, 4), eEnd: new Date(2014, 6), eTitle: 'Physical measurements tech',
          eDesc: ['Acoustic and vibratory measurements on sites.',
           'Addes OpenVPN security for vibratory tools on site.',
-          'Maintaining the compliance of the equipment park of all agencies in France.'],
+          'Upholding for compliance of the equipment park of all agencies in France.'],
          eFirm: 'Soldata Acoustic'}
       ];
 

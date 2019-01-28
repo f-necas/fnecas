@@ -3,10 +3,14 @@ import {
     animate,
     transition,
     style,
-    query,
+    query as q,
     group,
     animateChild
   } from '@angular/animations';
+
+export function query(s, a) {
+    return q(s, a, {optional: true});
+}
 
 export const routerAnimation = trigger('routerAnimation', [
   // The '* => *' will trigger the animation to change between any two states
