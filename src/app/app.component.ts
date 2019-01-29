@@ -19,7 +19,6 @@ import { Meta } from '@angular/platform-browser';
   ]
 })
 export class AppComponent {
-  title = 'oc';
   getRouteAnimation(outlet) {
     return outlet.activatedRouteData.animation;
   }

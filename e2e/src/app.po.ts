@@ -6,6 +6,10 @@ export class AppPage {
   }
 
   getTitleText() {
-    return element(by.css('app-root h1')).getText();
+    return element.all(by.css('h2 > a')).getText();
+  }
+
+  goToExperiences() {
+    return element(by.css('a[routerlink="/experiences"]')).click();
   }
 }
