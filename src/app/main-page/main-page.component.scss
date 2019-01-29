@@ -1,5 +1,4 @@
 @import "../app.component.scss";
-
 .fh-c {
     height: 100vh;
     display: flex;
@@ -93,4 +92,11 @@ h2:hover .approot-title:before,
 h2:hover .approot-title:after {
     width: 100%;
     opacity: 1;
+}
+
+@supports (-ms-ime-align:auto) {
+    /* Edge only */
+    .title-c {
+        justify-content: space-around;
+    }
 }
