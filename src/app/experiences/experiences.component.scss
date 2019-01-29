@@ -1,5 +1,4 @@
 @import "../app.component.scss";
-
 .fh-c {
     min-height: 100vh;
     margin-bottom: 5vh;
@@ -17,23 +16,36 @@
 }
 
 .firmAndDate {
-    width: 15%;
+    width: 20%;
     padding: 0 20px;
     border-right: 1px solid #eee;
+    &>span {
+        display: block;
+    }
 }
 
 .datePipe {
     color: #eee;
+    margin: 0;
 }
 
-p {
+p,
+span {
     text-align: center;
     letter-spacing: 0.2em;
+    & img {
+        height: 0.8em;;
+    }
+    
 }
 
 .firm {
     font-weight: 500;
     font-size: 1.1rem;
+}
+
+.firm, .place {
+    margin: 15px 0px;
 }
 
 ul {

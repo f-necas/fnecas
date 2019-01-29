@@ -20,12 +20,13 @@
       </h2>
       <div class="exp">
         <div class="firmAndDate">
-          <p class="firm">
+          <span class="firm">
             {{ i.eFirm }}
-          </p>
-          <p>{{ i.eEnd | date:'MMMM yyyy'}} </p>
-          <p *ngIf="!i.eSchool" class="datePipe">|</p>
-          <p *ngIf="!i.eSchool">{{ i.eStart | date:'MMMM yyyy'}}</p>
+          </span>
+          <span class="place"> <img src="assets/pin.png" alt="location"> {{ i.ePlace }}</span>
+          <span>{{ i.eEnd | date:'MMMM yyyy'}} </span>
+          <span *ngIf="!i.eSchool" class="datePipe">|</span>
+          <span *ngIf="!i.eSchool">{{ i.eStart | date:'MMMM yyyy'}}</span>
         </div>
         <div>
           <ul>

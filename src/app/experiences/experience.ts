@@ -3,6 +3,7 @@ export class Experience {
     eEnd: Date;
     eTitle: string;
     eDesc: Array<string>;
+    ePlace: string;
     eFirm: string;
     eSchool?: boolean;
     eTypeContract?: string;
