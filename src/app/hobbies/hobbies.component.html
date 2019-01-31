@@ -1,6 +1,11 @@
-<div class="fh-c error">
-  <div>
-      <h1>Work in progress</h1>
-      <h3>You can go back <a [routerLink]="['/']" routerLinkActive="router-link-active">there.</a></h3>
+<app-back-home></app-back-home>
+<div class="fh-c">
+  <div class="hobbies">
+    <div class="hobbieContent" *ngFor="let group of hobbies">
+      <h2 class="sp-title">{{ group.groupName }}</h2>
+      <div class="font-skills" *ngFor="let hobbie of group.hobbieGroup">
+        <p>{{hobbie.name}} <!--since {{hobbie.startDate | date:'yyyy'}}--></p>
+      </div>
+    </div>
   </div>
 </div>
