@@ -3,6 +3,7 @@ $second:#80d0c7;
 
 h2.sp-title {
     letter-spacing: 0.1em;
+    min-width: 30vw;
     font-weight: 300;
     font-size: 2.5rem;
     text-align: center;
@@ -21,41 +22,7 @@ h2.sp-title {
     }
 }
 
-.backHome{
-    position: fixed;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    & svg {
-        height: 10vh;
-        width: 10vh;
-        padding-left: 20px;
-    }
-    & .backIcon {
-        padding-left: 20px;
-        stroke: $primary;
-    }
-    & .backHomeText {
-        display: none;
-    }
-}
-
 @media only screen and (max-width: 1200px) {
-    .backHome {
-        position: initial;
-        height: 7vh;
-        border-bottom: 1px solid #eee;
-        & svg {
-            height: 3vh;
-            width: 3vh;
-            padding: 0 auto;
-        }
-        & .backHomeText {
-            display: none;
-            text-decoration: none;
-            font-size: 1%;
-        }
-    }
     h2.sp-title {
         margin-top: 2vh;
     }
